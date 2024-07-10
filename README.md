@@ -17,26 +17,29 @@ Blur FB Photos is a web browser plugin designed to enhance your browsing experie
 ### Chrome
 
 1. Download the [Blur FB Photos Chrome Extension](https://github.com/shyrwinsia/blur-fb-photos/archive/refs/heads/master.zip).
-2. Open Chrome and navigate to `chrome://extensions/`.
-3. Enable "Developer mode" in the top right corner.
-4. Click on "Load unpacked" and select the directory where you downloaded the extension.
-5. The Blur FB Photos icon should now appear in your browser toolbar.
+2. Extract the file contents.
+3. Open Chrome and navigate to `chrome://extensions/`.
+4. Enable "Developer mode" in the top right corner.
+5. Click on "Load unpacked" and select the directory where you extracted the extension.
+6. The Blur FB Photos icon should now appear in your browser toolbar.
 
 ### Firefox
 
 1. Download the [Blur FB Photos Firefox Add-on](https://github.com/shyrwinsia/blur-fb-photos/archive/refs/heads/master.zip).
-2. Open Firefox and navigate to `about:debugging`.
-3. Click on "This Firefox" in the sidebar.
-4. Click on "Load Temporary Add-on" and select the extension file.
-5. The Blur FB Photos icon should now appear in your browser toolbar.
+2. Extract the file contents.
+3. Open Firefox and navigate to `about:debugging`.
+4. Click on "This Firefox" in the sidebar.
+5. Click on "Load Temporary Add-on" and select the manifest.json file.
+6. The Blur FB Photos icon should now appear in your browser toolbar.
 
 ### Edge
 
 1. Download the [Blur FB Photos Edge Extension](https://github.com/shyrwinsia/blur-fb-photos/archive/refs/heads/master.zip).
-2. Open Edge and navigate to `edge://extensions/`.
-3. Enable "Developer mode" in the bottom left corner.
-4. Click on "Load unpacked" and select the directory where you downloaded the extension.
-5. The Blur FB Photos icon should now appear in your browser toolbar.
+2. Extract the file contents.
+3. Open Edge and navigate to `edge://extensions/`.
+4. Enable "Developer mode" in the bottom left corner.
+5. Click on "Load unpacked" and select the directory where you downloaded the extension.
+6. The Blur FB Photos icon should now appear in your browser toolbar.
 
 ## Usage
 
