@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+
+
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/water.css@2/out/water.css">
+    <title>Blur Facebook Photos</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+        }
+        
+        body {
+            min-width: 300px;
+            margin: 0;
+            padding: 0;
+        }
+        
+        #content {
+            width: 300px;
+            margin: auto;
+        }
+        
+        #header {
+            padding: 40px 50px 40px 50px;
+            margin: 0;
+            margin-bottom: 12px;
+            text-align: center;
+            background-color: #222;
+            box-shadow: 0px 0px 8px 1px #000;
+        }
+        
+        #header p {
+            font-size: 0.8em;
+            color: #999;
+        }
+        
+        #header h3 {
+            margin: 4px;
+            padding: 0;
+        }
+        
+        #prefs .item {
+            display: flex;
+            justify-content: space-between;
+            padding: 10px 20px;
+        }
+        
+        #prefs .blacklist {
+            padding: 10px 20px;
+        }
+        
+        #prefs .blacklist .title {
+            font-weight: bold;
+        }
+        
+        #prefs .item .setting {
+            text-align: right;
+        }
+        /* The switch - the box around the slider */
+        
+        .switch {
+            position: relative;
+            display: inline-block;
+            margin-top: 0px;
+            width: 30px;
+            height: 18px;
+        }
+        /* Hide default HTML checkbox */
+        
+        .switch input {
+            opacity: 0;
+            width: 0;
+            height: 0;
+        }
+        /* The slider */
+        
+        .slider {
+            position: absolute;
+            cursor: pointer;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            background-color: #222;
+            -webkit-transition: .2s;
+            transition: .2s;
+        }
+        
+        .slider:before {
+            position: absolute;
+            content: "";
+            height: 14px;
+            width: 14px;
+            left: 2px;
+            bottom: 2px;
+            background-color: #ddd;
+            -webkit-transition: .2s;
+            transition: .2s;
+        }
+        
+        input:checked+.slider {
+            background-color: #4267b2;
+        }
+        
+        input:focus+.slider {
+            box-shadow: 0 0 1px #2196F3;
+        }
+        
+        input:checked+.slider:before {
+            -webkit-transform: translateX(12px);
+            -ms-transform: translateX(12px);
+            transform: translateX(12px);
+        }
+        /* Rounded sliders */
+        
+        .slider.round {
+            border-radius: 16px;
+        }
+        
+        .slider.round:before {
+            border-radius: 50%;
+        }
+        
+        .hide {
+            visibility: hidden;
+            opacity: 0;
+            transition: visibility 0s 2s, opacity 2s ease-out;
+        }
+    </style>
+</head>
+
+<body>
+    <div id="content">
+        <div id="header">
+            <img src="assets/logo.png" alt="logo" style="width:50px;">
+            <h3>Blur Facebook Photos</h3>
+            <p>Blurs photos with metadata that matches with user's blacklist</p>
+        </div>
+        <div id="prefs">
+            <div class="item">
+                <p>Show matched keywords</p>
+                <label class="switch">
+                    <input type="checkbox" name="showMatched" id="show-matched">
+                    <span class="slider round"></span>
+                  </label>
+            </div>
+            <div class="item">
+                <p>Show image metadata</p>
+                <label class="switch">
+                    <input type="checkbox" name="showMeta" id="show-meta">
+                    <span class="slider round"></span>
+                  </label>
+            </div>
+            <div class="blacklist">
+                <div class="title">Blacklist keywords</div>
+                <div style="color:#999;font-size: 0.8em;margin-bottom: 12px;">(Case insensitive. Separate with comma)</div>
+                <textarea rows="4" style="padding:4px; border: 1px solid #ddd" id="keywords"></textarea>
+                <div style="display:flex;justify-content:space-between;margin:16px 0">
+                    <span id="message"></span><input type="button" value="Save" id="save-btn"></div>
+            </div>
+        </div>
+</body>
+
+<script src="./options.js">
+</script>
+
+</html>

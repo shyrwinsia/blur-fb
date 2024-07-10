@@ -1,0 +1,40 @@
+{
+    "name": "Blur Facebook Photos",
+    "version": "0.0.1",
+    "author": "Shyrwinsteel Sia",
+    "manifest_version": 3,
+    "description": "Blurs photos with metadata that matches with user's blacklist.",
+    "homepage_url": "https://github.com/shyrwinsia/blur-fb-photos",
+    "content_scripts": [{
+        "matches": [
+            "https://www.facebook.com/*",
+            "https://web.facebook.com/*"
+        ],
+        "css": [
+            "content-style.css"
+        ],
+        "js": [
+            "content-script.js"
+        ],
+        "run_at": "document_idle",
+        "all_frames": false
+    }],
+    "icons": {
+        "128": "assets/logo128.png",
+        "48": "assets/logo48.png",
+        "16": "assets/logo16.png"
+    },
+    "action": {
+        "default_icon": "assets/logo.png",
+        "default_popup": "options.html"
+    },
+    "content_security_policy": {},
+    "host_permissions": [
+        "https://www.facebook.com/*",
+        "https://web.facebook.com/*",
+        "https://mobile.facebook.com/*"
+    ],
+    "permissions": [
+        "storage"
+    ]
+}

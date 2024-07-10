@@ -1,0 +1,31 @@
+.caption {
+    opacity: 0.2;
+    display: hidden;
+    position: absolute;
+    left: 0px;
+    top: 0px;
+    padding: 10px 12px;
+    margin: 12px;
+    font-size: 12px;
+    line-height: 1.8;
+    background-color: rgba(0, 0, 0, 0.4);
+    color: #fff;
+    border-radius: 8px;
+}
+
+.caption:hover {
+    opacity: 1;
+}
+
+.reason {
+    position: absolute;
+    bottom: 0px;
+    right: 0px;
+    padding: 10px 12px;
+    font-size: 12px;
+    line-height: 1.8;
+    background-color: rgba(0, 0, 0, 0.4);
+    color: #fff;
+    margin: 12px;
+    border-radius: 8px;
+}
