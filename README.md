@@ -44,11 +44,11 @@ Blur FB Photos is a web browser plugin designed to enhance your browsing experie
 2. Add or remove keywords from the list to customize which images get blurred.
 3. Toggle the 'Show matched keywords' on or off to show or hide what keywords matched to the blurred image.
 4. Toggle the 'Show image metadata' on to show the description of the image and add the corresponding keywords to the list.
-5. Browse the web with confidence, knowing that unwanted images will be blurred automatically.
+5. Browse the Facebook with confidence, knowing that unwanted images will be blurred automatically.
 
 ## Contributing
 
-We welcome contributions from the community! To contribute to Blur FB Photos:
+Contributions are welcome from the community! To contribute to Blur FB Photos:
 
 1. Fork the repository.
 2. Create a new branch (`git checkout -b feature/your-feature`).
