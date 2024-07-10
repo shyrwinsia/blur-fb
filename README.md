@@ -38,7 +38,7 @@ Blur FB Photos is a web browser plugin designed to enhance your browsing experie
 2. Extract the file contents.
 3. Open Edge and navigate to `edge://extensions/`.
 4. Enable "Developer mode" in the bottom left corner.
-5. Click on "Load unpacked" and select the directory where you downloaded the extension.
+5. Click on "Load unpacked" and select the directory where you extracted the extension.
 6. The Blur FB Photos icon should now appear in your browser toolbar.
 
 ## Usage
